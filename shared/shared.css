@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: rgba(32, 32, 31, 1);
+  --blue: rgba(44, 71, 106, 1);
+  --yellow: rgba(209, 173, 59, 1);
+
+  --m-txt: 1rem;
+}
+
+body {
+  font-family: "Poppins", "Roboto", "Josephine Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.navbar-collapse {
+  background: var(--yellow);
+  border-radius: 8px 0 8px 8px;
+  padding: 2rem;
+}
+.container {
+  margin-top: 1rem;
+}
+.shrink {
+  margin-top: 0;
+}
+.navbar-nav {
+  margin-top: 1rem;
+}
+.nav-link {
+  font-weight: 600;
+}
+.cta {
+  width: 5rem;
+  border-radius: 8px;
+  outline: none;
+  background: var(--black);
+  transition-duration: 0.4s;
+  border: none;
+}
+
+.cta:hover {
+  background: transparent;
+  border: 3px solid white;
+
+  box-shadow: 0 10px 120px 0 rgba(255, 255, 255, 0.5),
+    0 17px 50px 0 rgb(255, 255, 255, 0.5);
+}
+
+h1:focus {
+  outline: 0;
+}
+
+/* DESKTOP VIEW OF BRAND  */
+@media (min-width: 40rem) {
+  .navbar-collapse {
+    background-color: transparent;
+  }
+  .cta {
+    width: 6rem;
+    margin-left: 1rem;
+    background: var(--yellow);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(10deg);
+  }
+}
