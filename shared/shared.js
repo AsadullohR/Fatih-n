@@ -19,14 +19,17 @@
 // })
 
 const nav = document.querySelector('nav');
+const navbarCollapse = document.querySelector('.navbar-collapse');
 const container = document.querySelector('.container');
 
 window.addEventListener('scroll', function () {
     if (window.pageYOffset > 100) {
         nav.classList.add('bg-dark', 'shadow');
+        navbarCollapse.classList.add('shrink');
         container.classList.add('shrink');
     } else {
         nav.classList.remove('bg-dark', 'shadow');
         container.classList.remove('shrink');
+        navbarCollapse.classList.remove('shrink');
     }
 })

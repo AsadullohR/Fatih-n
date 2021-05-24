@@ -1,3 +1,4 @@
+/* Welcome Mobile */
 .welcome {
   width: 100vw;
   height: 100vh;
@@ -84,7 +85,331 @@
   color: var(--yellow);
 }
 
+/* About */
+.about {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.about-info {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  padding: 2rem;
+}
+
+.sub-hd {
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.hd {
+  margin-top: -1rem;
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--yellow);
+}
+.line {
+  width: 9rem;
+  height: 2rem;
+  border-bottom: 1px solid black;
+  position: relative;
+  top: -3rem;
+}
+.ph {
+  color: rgba(60, 84, 114, 0.7);
+}
+.awards {
+  font-weight: 600;
+  color: var(--yellow);
+}
+.about-img-container {
+  text-align: center;
+}
+.about-frame {
+  width: 68%;
+  height: 28%;
+
+  background: transparent;
+  border: 10px solid var(--yellow);
+
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: -10;
+}
+.about-img {
+  width: 70%;
+  height: 30%;
+  margin: 0 auto;
+
+  animation-name: up-down;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* Services */
+.services {
+  margin-top: 3rem;
+  background: var(--black);
+}
+
+.serv-hd {
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--yellow);
+  text-align: center;
+
+  padding: 3rem 2rem 0 2rem;
+}
+
+.serv-sb-hd {
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+.serv-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.serv-card {
+  text-align: center;
+
+  background: white;
+  padding: 2rem;
+  margin: 2rem;
+
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+.serv-card:last-child {
+  margin-bottom: 4rem;
+}
+
+.serv-card:hover {
+  box-shadow: 0 0px 30px 1px rgba(209, 174, 59, 0.788);
+  transition-duration: 0.4s;
+}
+
+.serv-card_circle {
+  background: transparent;
+  border: 3px solid var(--yellow);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+
+  position: relative;
+  top: 3.95rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.fas {
+  color: var(--yellow);
+}
+
+.serv-card_hd {
+  color: var(--blue);
+  font-weight: bold;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+
+.serv-card_ph {
+  color: var(--l-blue);
+}
+
+.serv-card_btn {
+  padding: 1rem;
+  background: white;
+  color: var(--yellow);
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(147, 143, 143, 0.3);
+  transition-duration: 1s;
+}
+
+.serv-card_btn svg {
+  fill: var(--yellow);
+}
+
+.serv-card_btn:hover {
+  padding: 1rem;
+  background: white;
+  color: var(--yellow);
+  border: 3px solid var(--yellow);
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(209, 173, 59, 0.3);
+  transition-duration: 0.4s;
+}
+
+/* Events */
+.events {
+  width: 100vw;
+  height: 150vh;
+  background: linear-gradient(to top, rgba(51, 50, 50, 0.9) 100%, transparent),
+    url(images/events.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+}
+.events-hd {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem;
+  padding-top: 4rem;
+}
+.events-hd_yellow {
+  color: var(--yellow);
+}
+/* .row {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+} */
+.card {
+  height: 40vh;
+  width: 85%;
+  align-self: center;
+  margin: 2rem auto;
+  transition-duration: 0.6s;
+}
+.card:hover {
+  box-shadow: 0 10px 20px 10px rgba(44, 71, 106, 1);
+  transition-duration: 0.4s;
+}
+.card img {
+  height: 30vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.time-date {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+/* Donation */
+.donation {
+  background: #f4f4f4;
+}
+.donation-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+.donation-hd {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--blue);
+  align-self: center;
+  text-align: center;
+
+  margin-top: 3rem;
+}
+
+.donation-sb-hd {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--yellow);
+  align-self: center;
+}
+
+.donation-line {
+  width: 25%;
+  align-self: center;
+}
+.donation-ph {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.donation-progress {
+  background: white;
+  height: 15vh;
+  width: 100%;
+  padding: 2rem;
+
+  box-shadow: 0 10px 20px rgba(209, 173, 59, 0.3);
+  transition-duration: 0.4s;
+  margin: 2rem auto;
+}
+
+.progress-bar-striped {
+  background-color: var(--yellow);
+}
+.donation-raised-goal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.raised,
+.goal {
+  margin-top: 3rem;
+  font-size: 0.6rem;
+}
+.raised-yellow,
+.goal-yellow {
+  color: var(--yellow);
+}
+
+.donate-now_btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 25px;
+  background: var(--yellow);
+  color: white;
+
+  box-shadow: 0 10px 20px rgba(209, 173, 59, 0.3);
+  transition-duration: 0.4s;
+}
+
+.donate-now_btn:hover {
+  background: transparent;
+  border: 3px solid rgba(209, 173, 59, 0.8);
+  color: var(--yellow);
+  transition-duration: 0.4s;
+}
+
+/* Contact */
+.contact-hd {
+  text-align: center;
+  width: 100vw;
+}
+.contact-hd_dt {
+  display: none;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
 @media (min-width: 40rem) {
+  /* Welcome */
   .welcome-container {
     flex-direction: row-reverse;
     padding: 4rem;
@@ -112,5 +437,127 @@
   .crsl-img {
     width: 25rem;
     height: 25rem;
+  }
+
+  /* About */
+  .about {
+    flex-direction: row;
+  }
+
+  .about-info {
+    flex-direction: column;
+    padding: 8rem;
+  }
+
+  .ph {
+    width: 50%;
+  }
+
+  .about-frame {
+    width: 34vw;
+    height: 70%;
+    top: 108%;
+    left: 36%;
+    right: 1rem;
+    text-align: center;
+    z-index: -10;
+  }
+  .about-img {
+    width: 38vw;
+    height: 78%;
+    margin: 4rem auto;
+    margin-right: 14rem;
+  }
+
+  /* Services */
+  .services {
+    margin-top: 3rem;
+    background: var(--black);
+  }
+
+  .serv-hd {
+    font-family: "Poppins";
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--yellow);
+    text-align: center;
+
+    padding: 3rem 2rem 0 2rem;
+  }
+
+  .serv-sb-hd {
+    font-family: "Poppins";
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+  }
+  .serv-container {
+    flex-direction: row;
+    background-color: var(--black);
+    margin: 4rem;
+  }
+
+  .serv-card {
+    margin: 3rem 1rem;
+    margin-bottom: 7rem;
+    background-color: white;
+  }
+  .serv-card:last-child {
+    margin-bottom: 7rem;
+  }
+
+  .serv-card_btn:hover {
+    padding: 1rem;
+    background: white;
+    color: var(--yellow);
+    border: 3px solid var(--yellow);
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(209, 173, 59, 0.3);
+    transition-duration: 0.4s;
+  }
+
+  /* Events */
+  .events {
+    height: 100vh;
+  }
+
+  /* Donation */
+
+  .donation-container {
+    padding: 5rem 15rem;
+  }
+  .donation-hd {
+    font-size: 3rem;
+  }
+
+  .donation-sb-hd {
+    font-size: 1.2rem;
+  }
+
+  .donation-line {
+    width: 10%;
+  }
+  .donation-ph {
+    align-self: center;
+    width: 70%;
+  }
+
+  .donation-progress {
+    height: 32vh;
+    width: 70%;
+    padding: 5rem;
+    margin: 4rem auto;
+  }
+
+  .raised,
+  .goal {
+    margin-top: 6rem;
+    font-size: 1rem;
+  }
+
+  .donate-now_btn {
+    width: 20%;
+    align-self: center;
   }
 }
