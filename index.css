@@ -1,7 +1,7 @@
 /* Welcome Mobile */
 .welcome {
   width: 100vw;
-  height: 100vh;
+  height: 115vh;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 100%, transparent),
     url(images/welcome.jpg);
   background-size: cover;
@@ -261,7 +261,6 @@
 
 /* Events */
 .events {
-  width: 100vw;
   height: 150vh;
   background: linear-gradient(to top, rgba(51, 50, 50, 0.9) 100%, transparent),
     url(images/events.jpg);
@@ -270,6 +269,11 @@
   padding: 0;
   margin: 0;
 }
+
+.row {
+  width: 100vw;
+}
+
 .events-hd {
   color: white;
   font-size: 2rem;
@@ -281,11 +285,7 @@
 .events-hd_yellow {
   color: var(--yellow);
 }
-/* .row {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-} */
+
 .card {
   height: 40vh;
   width: 85%;
@@ -396,7 +396,13 @@
 /* Contact */
 .contact-hd {
   text-align: center;
+  color: var(--blue);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contact-hd_mb {
   width: 100vw;
+  margin-top: 2rem;
 }
 .contact-hd_dt {
   display: none;
@@ -406,6 +412,69 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 3rem;
+  text-align: center;
+}
+.contact-detail_box {
+  margin-top: 1rem;
+}
+.contact-detail_container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+
+  margin-top: -1rem;
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.contact-detail_ph {
+  padding-left: 0.5rem;
+}
+
+.contact-detail_line {
+  border-bottom: 1px solid var(--yellow);
+  margin: 0 auto;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 14.375rem;
+  width: 15.625rem;
+  left: auto;
+  right: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 14.375rem;
+  width: 15.625rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition-duration: 0.4s;
+}
+
+.gmap_canvas:hover {
+  box-shadow: 0 10px 20px rgba(219, 198, 131, 0.4);
+  transition-duration: 0.4s;
 }
 
 @media (min-width: 40rem) {
@@ -456,7 +525,7 @@
   .about-frame {
     width: 34vw;
     height: 70%;
-    top: 108%;
+    top: 130%;
     left: 36%;
     right: 1rem;
     text-align: center;
@@ -495,7 +564,7 @@
   .serv-container {
     flex-direction: row;
     background-color: var(--black);
-    margin: 4rem;
+    margin: 0rem;
   }
 
   .serv-card {
@@ -519,7 +588,7 @@
 
   /* Events */
   .events {
-    height: 100vh;
+    height: 120vh;
   }
 
   /* Donation */
@@ -559,5 +628,44 @@
   .donate-now_btn {
     width: 20%;
     align-self: center;
+  }
+
+  /* Contact */
+  .contact-hd_mb {
+    display: none;
+  }
+  .contact-hd_dt {
+    display: block;
+    width: 50vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+    text-align: left;
+  }
+  .contact-container {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    margin-bottom: 10rem;
+  }
+
+  .contact-details {
+    width: 50%;
+  }
+
+  .contact-detail {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+  }
+
+  .contact-detail_line {
+    margin-left: 1.2rem;
+  }
+
+  .gmap_canvas {
+    margin-top: 4rem;
   }
 }
