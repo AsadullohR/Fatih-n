@@ -71,6 +71,7 @@ h1:focus {
   outline: 0;
 }
 
+/* Footer */
 .container-footer {
   max-width: 70vw;
   margin: auto;
@@ -142,6 +143,17 @@ ul {
   background-color: #ffffff;
 }
 
+#social {
+  fill: white;
+  color: white;
+  transition: 0.4s;
+}
+#social:hover {
+  fill: black;
+  color: black;
+  transition: 0.4s;
+}
+
 /*responsive*/
 @media (max-width: 767px) {
   .footer-col {
@@ -180,6 +192,15 @@ ul {
   }
 
   100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes welcome {
+  from {
+    transform: translateY(5%);
+  }
+  to {
     transform: translateY(0%);
   }
 }
